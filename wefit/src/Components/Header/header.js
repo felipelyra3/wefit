@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { IoMdBasket } from "react-icons/io";
-
-export const itens = 1;
+import React, { useContext } from 'react';
+import UserContext from "../Contexts/UserContext.js";
 
 export default function Header() {
+    const { itens, setItens } = useContext(UserContext);
 
     return (
         <>
